@@ -1,10 +1,9 @@
+import AuthForm from "components/authForm";
 import React from "react"
 import { authService, firebaseInstance } from "../firebase";
-import AuthForm from "components/AuthForm";
+
 
 const Auth = () => {
-  const toggleAccount = () => setNewAccount((prev) => !prev);
-  
   const onSocialClick = async (event) => {
       const{
         target:{name},
